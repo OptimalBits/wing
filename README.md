@@ -10,6 +10,7 @@ and angular directives.
 
 Best way to explain its use is with an example:
 
+```javascript
 //
 // Client
 // Observe document 1234 on collection medias.
@@ -54,4 +55,4 @@ wing.update('/medias/1234', {progress: 30});
 // API.
 //
 wing.uuid(); // Generates a global unique uuid that can be used by clients or servers.
-
+```
