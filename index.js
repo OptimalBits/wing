@@ -53,7 +53,7 @@ var WingServer = function WingServer(socketIo, redisOpts){
     socket.on('unobserve', function(keyPath, cb){
       var id = makeId(keyPath);
       socket.leave(id);
-      logger("Socket %s stopped synchronization for id:%s", socket.id, id);
+      logger.info("Socket %s stopped synchronization for id:%s", socket.id, id);
       cb();
     });
         
